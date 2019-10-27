@@ -7,10 +7,6 @@ import { Satellite } from './satellite';
   styleUrls: ['./app.component.css']
 })
 
-
-
-
-
 export class AppComponent {
   title = 'orbit-report';
 
