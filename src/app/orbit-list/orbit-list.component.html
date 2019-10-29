@@ -1,4 +1,4 @@
-<H3>Orbit List</H3>
+<H3>Orbit Report</H3>
 <table>
     <tr class="header-row">
         <th class="sortable" (click)="sort('name')">Name</th>
@@ -9,12 +9,12 @@
     </tr>
     <tr *ngFor = "let satellite of satellites">
         <td>{{satellite.name}}</td>
-        <!-- <td [class.warning]='satellite.warning'>{{satellite.type}}</td> -->
-        <td>{{satellite.type}}</td>
+        <td [class.warning]='shouldShowWarning(satellite.type)'>{{satellite.type}}</td>
         <td>{{satellite.operational}}</td>
         <td>{{satellite.orbitType}}</td>
         <td>{{satellite.launchDate}}</td>
     </tr>
 </table>
+<!-- [style.color]="colorName" (click) = "colorName = changeColor(colorName) -->
 
 
