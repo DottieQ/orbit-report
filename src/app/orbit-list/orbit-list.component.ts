@@ -26,7 +26,7 @@ export class OrbitListComponent implements OnInit {
     });
  }
 
- shouldShowWarning(type): boolean {
+ shouldShowWarning(type: string): boolean {
    if (type.toLowerCase() === 'space debris') {
        return true;
    } else {
