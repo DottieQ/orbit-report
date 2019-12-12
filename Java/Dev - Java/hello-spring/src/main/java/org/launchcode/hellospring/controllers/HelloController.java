@@ -15,7 +15,7 @@ public class HelloController {
 
     // Responds to /hello?name=LaunchCode
     @RequestMapping(value = "hello", method = {RequestMethod.GET, RequestMethod.POST})
-  //  @ResponseBody
+    //  @ResponseBody
     public String hello(@RequestParam String name, Model model) {
         String theGreeting = "Hello, " + name + "!";
         model.addAttribute("greeting", theGreeting);
